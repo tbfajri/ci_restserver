@@ -3,13 +3,6 @@ defined ('BASEPATH') OR exit ('No direct script access allowed');
 
 class Kontak_model extends CI_Model {
 
-    public function empty_response(){
-        $response['status'] = 502;
-        $response['error'] = true;
-        $response['message'] = 'Field Tidak Boleh Kosong';
-        return $response;
-    }
-
     public function getKontak($id = null ){
         if ($id === null ) {
            $query =  $this->db->get('pelanggan')->result();
