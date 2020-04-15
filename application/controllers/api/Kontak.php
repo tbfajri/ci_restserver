@@ -1,9 +1,10 @@
 <?php 
 
+use Restserver\libraries\REST_Controller;
 defined('BASEPATH') OR exit ('No direct script access allowed');
 
 require APPPATH . '/libraries/REST_Controller.php';
-use Restserver\libraries\REST_Controller;
+// require APPPATH . '/libraries/Format.php';
 
 class Kontak extends Rest_Controller {
 
